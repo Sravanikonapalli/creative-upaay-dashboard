@@ -5,7 +5,7 @@ It replicates a Kanban-style task board (To Do, In Progress, Done) and includes 
 
 ---
 ### LIVE URL
-- [click here to view thee live deployed app]() 
+- [click here to view thee live deployed app](https://creative-upaay-dashboard-seven.vercel.app/) 
 
 ##  Project Overview
 - Pixel-perfect replication of the Figma dashboard design.  
@@ -36,7 +36,7 @@ It replicates a Kanban-style task board (To Do, In Progress, Done) and includes 
 ##  Steps to Run Locally
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Sravanikonapalli/creative-upaay-dashoard.git
+   git clone https://github.com/Sravanikonapalli/creative-upaay-dashboard.git
    cd creative-upaay-functional dashboard ui/frontend
 Install dependencies:
 
