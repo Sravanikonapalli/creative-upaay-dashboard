@@ -11,3 +11,46 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+:root{
+  --bg:#f6f7fb;
+  --card:#fff;
+  --muted:#6b7280;
+  --accent:#7c3aed;
+}
+
+body{ margin:0; font-family: Inter, system-ui, Arial; background:var(--bg); color:#111; }
+.app-header{ padding:16px 24px; background:transparent; display:flex; align-items:center; gap:12px; }
+.app-root{ max-width:1200px; margin:24px auto; padding:0 16px; }
+
+.board-controls{ display:flex; gap:12px; align-items:center; margin-bottom:12px; }
+
+.btn-primary{ background:var(--accent); color:white; border:none; padding:8px 12px; border-radius:8px; cursor:pointer; }
+
+.columns{ display:flex; gap:16px; align-items:flex-start; }
+
+.column{ width:320px; background:transparent; }
+.column h3{ margin:0 0 8px 0; font-size:16px; display:flex; justify-content:space-between; align-items:center; }
+.column-list{ background:rgba(255,255,255,0.6); min-height:60px; padding:8px; border-radius:12px; box-shadow: 0 4px 14px rgba(20,20,40,0.05); }
+
+.task-card{ background:var(--card); padding:12px; margin-bottom:8px; border-radius:10px; box-shadow: 0 2px 6px rgba(16,24,40,0.04); }
+.task-header{ display:flex; justify-content:space-between; align-items:center; }
+.task-desc{ margin:8px 0 10px 0; color:var(--muted); font-size:13px; }
+.task-meta{ display:flex; gap:8px; align-items:center; }
+
+.badge{ padding:4px 8px; border-radius:999px; font-size:12px; background:#eee; }
+.priority-low{ background:#e6f4ea; color:#14532d; }
+.priority-medium{ background:#fff7ed; color:#92400e; }
+.priority-high{ background:#fde8ea; color:#7f1d1d; }
+.cat{ background:#eef2ff; color:#3730a3; }
+
+.modal-backdrop{ position:fixed; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,0.35); }
+.modal{ background:var(--card); padding:16px; border-radius:12px; width:420px; box-shadow:0 10px 40px rgba(10,10,30,0.2); }
+.modal-form label{ font-size:13px; color:var(--muted); display:block; margin-top:8px; }
+.modal-form input, .modal-form textarea, .modal-form select{ width:100%; margin-top:6px; padding:8px; border-radius:8px; border:1px solid #e6e9ef; }
+.modal-actions{ display:flex; justify-content:flex-end; gap:8px; margin-top:12px; }
+
+.filter-bar{ display:flex; gap:8px; align-items:center; }
+.filter-bar input{ padding:8px; border-radius:8px; border:1px solid #e6e9ef; }
+.row{ display:flex; gap:8px; }
+.icon-btn{ background:transparent; border:none; cursor:pointer; padding:4px; }
+.drag-over{ background:rgba(124,58,237,0.06); }
